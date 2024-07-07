@@ -7,11 +7,11 @@ from email.mime.text import MIMEText
 # Set up the YouTube Data API key
 os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
 os.environ["OAUTHLIB_RELAX_TOKEN_SCOPE"] = "1"
-api_key = 'AIzaSyCs0LMbUoUNUvYJ0_T99PV82MRyP4-dGLw'
+api_key = 'API key'
 
 # Set up Gmail credentials - use your generated app password here
 email_address = "naveen.m.chsm@gmail.com"
-email_password = "ovxh rrtj jfaz itoo"
+email_password = "Application Password"
 
 # Function to search for channels by name
 def search_channels_by_name(query):
@@ -129,7 +129,7 @@ message += f"Videos: {max_channel['video_count']}\n"
 message += f"Views: {max_channel['view_count']}\n\n"
 message += f"Channel URL: {max_channel['channel_url']}\n\n"
 message += lower_channels_info
-message += f"{extra_sentence}\n\nBest regards,\n[king zentar]"
+message += f"{extra_sentence}\n\nBest regards,\n[naveen]"
 
 # Send email to max channel
 send_email("naveenkumarmoorthi1020@gmail.com", "channels information", message)
